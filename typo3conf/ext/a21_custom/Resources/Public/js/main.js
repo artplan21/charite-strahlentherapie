@@ -598,7 +598,6 @@ Brandung.DeferMainPlugins.then(function () {
 			 */
 			Brandung.Plugins.modFlexslider = function (obj, reinit) {
 				var imgWidth = obj.find('img').width();
-				console.log(obj);
 				imgWidth = reinit ? imgWidth : 220;
 
 				var options = $(),
@@ -659,15 +658,10 @@ Brandung.DeferMainPlugins.then(function () {
 					});
 				}
 
-				options = simpleOpt;
-
-
-				console.log(obj.parents('.slide-speed-slow').length);
 				if(obj.parents('.slide-speed-slow').length > 0){
 					$.extend(simpleOpt, {
 						slideshowSpeed: 2000
 					});
-					console.log(simpleOpt);
 				}
 				if(obj.parents('.slide-speed-middle').length > 0){
 					$.extend(simpleOpt, {
@@ -680,16 +674,14 @@ Brandung.DeferMainPlugins.then(function () {
 					});
 				}
 
+				options = simpleOpt;
+
 				if (reinit) {
 					Brandung.Helpers.flexdestroy(obj, options);
 					Brandung.Functions.zoomCarousel();
 				} else {
-					console.log(options);
 					obj.flexslider(options);
 				}
-
-
-
 			};
 
 			/**
