@@ -416,7 +416,7 @@ main { padding-bottom: 80px; /* tablet */ /*@include respond-min($breakpoint-min
 /* line 79, ../../Private/sass/partials/_layout.scss */
 .container .row:last-child { margin-bottom: 0; }
 @media screen and (min-width: 74.9375em) { /* line 83, ../../Private/sass/partials/_layout.scss */
-  .container > p { max-width: 73%; } }
+  .container > p, .container > ul, .container > ol { max-width: 73%; } }
 /* line 89, ../../Private/sass/partials/_layout.scss */
 .container .content-wrap { clear: both; overflow: hidden; }
 @media screen and (min-width: 74.9375em) { /* line 94, ../../Private/sass/partials/_layout.scss */
@@ -823,7 +823,7 @@ input, textarea, select { font-size: 16px; font-size: 1rem; }
 .icon-right:before { content: "\e61e"; }
 
 /* line 318, ../../Private/sass/partials/_icons.scss */
-.icon-locations:before, .mod-stage-static.stage-persona .stage-content .street-address:before, .mod-stage-static.stage-contact-clinic .stage-content .street-address:before, .mod-vcard .adr .street-address:before, .mod-finder ul li:first-child a:before, .mod-bloc-contact .street-address > p:before { content: "\e61f"; }
+.icon-locations:before, html.microsite nav[role="navigation"] .color-pattern-7 div:first-child:before, .mod-stage-static.stage-persona .stage-content .street-address:before, .mod-stage-static.stage-contact-clinic .stage-content .street-address:before, .mod-vcard .adr .street-address:before, .mod-finder ul li:first-child a:before, .mod-bloc-contact .street-address > p:before { content: "\e61f"; }
 
 /* line 322, ../../Private/sass/partials/_icons.scss */
 .icon-mail:before, .mod-meta-navigation .contact > a:before, .mod-stage-static.stage-persona .stage-content .contact .mail:before, .mod-stage-static.stage-contact-clinic .stage-content .contact .mail:before, .mod-bloc-contact .mail:before { content: "\e620"; }
@@ -1863,6 +1863,23 @@ footer .col-l-9 > div:first-child li { float: none; }
 /* line 509, ../../Private/sass/partials/_footer.scss */
 .color-pattern-contrast footer .logo { background: url(../img/svg/logo_weiss.svg) transparent 0 0 no-repeat; }
 
+/* line 7, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite footer .contact-wrapper a:hover, html.microsite footer .contact-wrapper a:focus { text-decoration: underline !important; }
+/* line 11, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite footer ul.meta-navi, html.microsite footer ul.service-navi { height: auto; width: auto; }
+/* line 15, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite footer ul.meta-navi li, html.microsite footer ul.service-navi li { float: none !important; }
+@media screen and (min-width: 61.9375em) { /* line 11, ../../Private/sass/partials/microsite/_footer.scss */
+  html.microsite footer ul.meta-navi, html.microsite footer ul.service-navi { height: auto; width: auto; } }
+@media screen and (min-width: 47.9375em) { /* line 11, ../../Private/sass/partials/microsite/_footer.scss */
+  html.microsite footer ul.meta-navi, html.microsite footer ul.service-navi { height: auto; width: auto; } }
+@media screen and (max-width: 62em) { /* line 30, ../../Private/sass/partials/microsite/_footer.scss */
+  html.microsite .contact-wrapper { margin: 0 10px; }
+  /* line 34, ../../Private/sass/partials/microsite/_footer.scss */
+  html.microsite .award-wrapper { margin-left: 10px; }
+  /* line 38, ../../Private/sass/partials/microsite/_footer.scss */
+  html.microsite ul.meta-navi, html.microsite ul.service-navi { margin-left: 10px; } }
+
 /** brandung navigation.scss v1.0.0  Copyright brandung GmbH & Co.KG http://www.brandung.de/  Date: 2014-09-23 MIT License (MIT) */
 /* ========================================================================== navigation ========================================================================== */
 /* line 23, ../../Private/sass/partials/_navigation.scss */
@@ -2844,7 +2861,7 @@ p.thankyou { font-size: 1em; font-weight: bold; }
 /* line 309, ../../Private/sass/partials/mod/_mod-meta-navigation.scss */
 .mod-meta-navigation .contact .flyout-content a { display: inline-block; }
 /* line 313, ../../Private/sass/partials/mod/_mod-meta-navigation.scss */
-.mod-meta-navigation .contact .flyout-content .icon-locations:before, .mod-meta-navigation .contact .flyout-content .mod-stage-static.stage-persona .stage-content .street-address:before, .mod-stage-static.stage-persona .stage-content .mod-meta-navigation .contact .flyout-content .street-address:before, .mod-meta-navigation .contact .flyout-content .mod-stage-static.stage-contact-clinic .stage-content .street-address:before, .mod-stage-static.stage-contact-clinic .stage-content .mod-meta-navigation .contact .flyout-content .street-address:before, .mod-meta-navigation .contact .flyout-content .mod-vcard .adr .street-address:before, .mod-vcard .adr .mod-meta-navigation .contact .flyout-content .street-address:before, .mod-meta-navigation .contact .flyout-content .mod-finder ul li:first-child a:before, .mod-finder ul li:first-child .mod-meta-navigation .contact .flyout-content a:before, .mod-meta-navigation .contact .flyout-content .mod-bloc-contact .street-address > p:before, .mod-bloc-contact .mod-meta-navigation .contact .flyout-content .street-address > p:before, .mod-meta-navigation .contact .flyout-content .icon-phone:before, .mod-meta-navigation .mod-stage-static.stage-persona .stage-content .contact .flyout-content .tel:before, .mod-stage-static.stage-persona .stage-content .mod-meta-navigation .contact .flyout-content .tel:before, .mod-meta-navigation .mod-stage-static.stage-contact-clinic .stage-content .contact .flyout-content .tel:before, .mod-stage-static.stage-contact-clinic .stage-content .mod-meta-navigation .contact .flyout-content .tel:before, .mod-meta-navigation .contact .flyout-content .mod-vcard .adr .tel:before, .mod-vcard .adr .mod-meta-navigation .contact .flyout-content .tel:before, .mod-meta-navigation .contact .flyout-content .mod-bloc-contact .tel:before, .mod-bloc-contact .mod-meta-navigation .contact .flyout-content .tel:before, .mod-meta-navigation .contact .flyout-content .icon-mail:before, .mod-meta-navigation .contact .flyout-content .contact > a:before, .mod-meta-navigation .mod-stage-static.stage-persona .stage-content .contact .flyout-content .mail:before, .mod-stage-static.stage-persona .stage-content .mod-meta-navigation .contact .flyout-content .mail:before, .mod-meta-navigation .mod-stage-static.stage-contact-clinic .stage-content .contact .flyout-content .mail:before, .mod-stage-static.stage-contact-clinic .stage-content .mod-meta-navigation .contact .flyout-content .mail:before, .mod-meta-navigation .contact .flyout-content .mod-bloc-contact .mail:before, .mod-bloc-contact .mod-meta-navigation .contact .flyout-content .mail:before, .mod-meta-navigation .contact .flyout-content .icon-expert:before, .mod-meta-navigation .contact .flyout-content nav[role="navigation"] .color-pattern-7 div:first-child:before, nav[role="navigation"] .color-pattern-7 .mod-meta-navigation .contact .flyout-content div:first-child:before, .mod-meta-navigation .contact .flyout-content .mod-finder ul li a:before, .mod-finder ul li .mod-meta-navigation .contact .flyout-content a:before { font-size: 25px !important; }
+.mod-meta-navigation .contact .flyout-content .icon-locations:before, .mod-meta-navigation .contact .flyout-content html.microsite nav[role="navigation"] .color-pattern-7 div:first-child:before, html.microsite nav[role="navigation"] .color-pattern-7 .mod-meta-navigation .contact .flyout-content div:first-child:before, .mod-meta-navigation .contact .flyout-content .mod-stage-static.stage-persona .stage-content .street-address:before, .mod-stage-static.stage-persona .stage-content .mod-meta-navigation .contact .flyout-content .street-address:before, .mod-meta-navigation .contact .flyout-content .mod-stage-static.stage-contact-clinic .stage-content .street-address:before, .mod-stage-static.stage-contact-clinic .stage-content .mod-meta-navigation .contact .flyout-content .street-address:before, .mod-meta-navigation .contact .flyout-content .mod-vcard .adr .street-address:before, .mod-vcard .adr .mod-meta-navigation .contact .flyout-content .street-address:before, .mod-meta-navigation .contact .flyout-content .mod-finder ul li:first-child a:before, .mod-finder ul li:first-child .mod-meta-navigation .contact .flyout-content a:before, .mod-meta-navigation .contact .flyout-content .mod-bloc-contact .street-address > p:before, .mod-bloc-contact .mod-meta-navigation .contact .flyout-content .street-address > p:before, .mod-meta-navigation .contact .flyout-content .icon-phone:before, .mod-meta-navigation .mod-stage-static.stage-persona .stage-content .contact .flyout-content .tel:before, .mod-stage-static.stage-persona .stage-content .mod-meta-navigation .contact .flyout-content .tel:before, .mod-meta-navigation .mod-stage-static.stage-contact-clinic .stage-content .contact .flyout-content .tel:before, .mod-stage-static.stage-contact-clinic .stage-content .mod-meta-navigation .contact .flyout-content .tel:before, .mod-meta-navigation .contact .flyout-content .mod-vcard .adr .tel:before, .mod-vcard .adr .mod-meta-navigation .contact .flyout-content .tel:before, .mod-meta-navigation .contact .flyout-content .mod-bloc-contact .tel:before, .mod-bloc-contact .mod-meta-navigation .contact .flyout-content .tel:before, .mod-meta-navigation .contact .flyout-content .icon-mail:before, .mod-meta-navigation .contact .flyout-content .contact > a:before, .mod-meta-navigation .mod-stage-static.stage-persona .stage-content .contact .flyout-content .mail:before, .mod-stage-static.stage-persona .stage-content .mod-meta-navigation .contact .flyout-content .mail:before, .mod-meta-navigation .mod-stage-static.stage-contact-clinic .stage-content .contact .flyout-content .mail:before, .mod-stage-static.stage-contact-clinic .stage-content .mod-meta-navigation .contact .flyout-content .mail:before, .mod-meta-navigation .contact .flyout-content .mod-bloc-contact .mail:before, .mod-bloc-contact .mod-meta-navigation .contact .flyout-content .mail:before, .mod-meta-navigation .contact .flyout-content .icon-expert:before, .mod-meta-navigation .contact .flyout-content nav[role="navigation"] .color-pattern-7 div:first-child:before, nav[role="navigation"] .color-pattern-7 .mod-meta-navigation .contact .flyout-content div:first-child:before, .mod-meta-navigation .contact .flyout-content .mod-finder ul li a:before, .mod-finder ul li .mod-meta-navigation .contact .flyout-content a:before { font-size: 25px !important; }
 /* line 320, ../../Private/sass/partials/mod/_mod-meta-navigation.scss */
 .mod-meta-navigation .contact .flyout-content p { float: right; margin-bottom: 45px; }
 /* line 324, ../../Private/sass/partials/mod/_mod-meta-navigation.scss */
@@ -3050,9 +3067,9 @@ p.thankyou { font-size: 1em; font-weight: bold; }
 
 /* line 3, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite { /* max-width and global Position of Meta-Navi: Start */ /* max-width and global Position of Meta-Navi: End */ }
-/* line 6, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+/* line 5, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .max-width { max-width: 921px; }
-@media (min-width: 1180px) { /* line 9, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+@media (min-width: 1180px) { /* line 8, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .max-width .mod-meta-navigation { left: 880px; } }
 /* line 15, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .mod-meta-navigation { width: 100.5%; max-width: 339px; }
@@ -3063,65 +3080,95 @@ html.microsite .mod-meta-navigation > ul.meta-list > li { width: 33.3%; }
 /* line 26, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .mod-meta-navigation > ul > li { padding: 10px 5px 10px 10px; }
 /* line 29, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
-html.microsite .mod-meta-navigation .emergency { padding-right: 10px; }
-/* line 32, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .mod-meta-navigation .search { padding: 10px 0; width: 100%; }
-/* line 36, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+/* line 33, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .mod-meta-navigation .flyout { width: 100.5%; }
-/* line 39, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+/* line 36, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .mod-meta-navigation .flyout-content { padding: 20px; }
-/* line 41, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+/* line 38, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .mod-meta-navigation .flyout-content a, html.microsite .mod-meta-navigation .flyout-content li > span { padding: 0 0 0 35px; }
-/* line 44, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+/* line 41, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .mod-meta-navigation .flyout-content a:before, html.microsite .mod-meta-navigation .flyout-content li > span:before { margin-right: 10px; }
-/* line 50, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+/* line 47, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .mod-meta-navigation .accessibility .flyout-content .mod-contrast { width: 300px; }
-/* line 53, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
-html.microsite .mod-meta-navigation .accessibility .flyout-content .switch { width: 70px; }
-/* line 55, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
-html.microsite .mod-meta-navigation .accessibility .flyout-content .switch:before { width: 15px; }
-@media screen and (min-width: 62em) { /* line 60, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
-  html.microsite .mod-meta-navigation .accessibility .flyout-content .mod-contrast { width: 100%; } }
-/* line 66, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+@media screen and (min-width: 62em) { /* line 46, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .mod-meta-navigation .accessibility .flyout-content { /* Contrast-Switch : Start */ }
+  /* line 51, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .mod-meta-navigation .accessibility .flyout-content .mod-contrast { width: 100%; }
+  /* line 55, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .mod-meta-navigation .accessibility .flyout-content .icon-morecontrast { width: 12px; }
+  /* line 58, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .mod-meta-navigation .accessibility .flyout-content .switch { width: 65px; }
+  /* line 61, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .mod-meta-navigation .accessibility .flyout-content .switch.active:before { left: 50px; }
+  /* line 68, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .mod-meta-navigation .accessibility .flyout-content .wrap-button span:nth-child(3) { margin: 0 2.6em 0 0.2em; } }
+/* line 76, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .mod-meta-navigation .language .flyout-content ul { width: 110px; }
-/* line 69, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+/* line 79, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .mod-meta-navigation .language .flyout-content li { width: 100%; }
-@media screen and (min-width: 62em) { /* line 73, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+@media screen and (min-width: 62em) { /* line 83, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .mod-meta-navigation .language .flyout-content ul { width: 100% !important; }
-  /* line 75, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  /* line 85, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .mod-meta-navigation .language .flyout-content ul li { width: auto !important; } }
-@media screen and (min-width: 48em) { /* line 65, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+@media screen and (min-width: 48em) { /* line 75, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .mod-meta-navigation .language .flyout-content { padding: 10px; } }
-@media (min-width: 415px) { /* line 85, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
-  html.microsite .mod-meta-navigation ul.meta-list > li { width: 33.3%; }
-  /* line 87, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
-  html.microsite .mod-meta-navigation ul.meta-list > li.emergency { width: 75px; } }
+@media (min-width: 415px) { /* line 95, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .mod-meta-navigation ul.meta-list > li { width: 33.3%; } }
 @media screen and (min-width: 48em) { /* line 15, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
-  html.microsite .mod-meta-navigation { width: 320px; } }
+  html.microsite .mod-meta-navigation { width: 245px; } }
 @media screen and (min-width: 62em) { /* line 15, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .mod-meta-navigation { width: 300px; }
-  /* line 100, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  /* line 107, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .mod-meta-navigation > ul.meta-list > li { width: auto; }
-  /* line 105, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  /* line 112, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .mod-meta-navigation .search { width: auto; padding: 10px; }
-  /* line 109, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  /* line 116, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .mod-meta-navigation .flyout { width: 100.2%; } }
-@media screen and (max-width: 62em) { /* line 118, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+@media screen and (max-width: 62em) { /* line 126, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .mod-meta-navigation.active > ul:first-child .flyout .col-l-6:first-child { margin-bottom: 10px; } }
-/* line 126, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+/* line 135, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .fadeInUp:after, html.microsite .fadeInUp:before { width: 0; }
-/* line 129, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+/* line 138, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .fadeInUp:after { border-width: 10px; }
-/* line 132, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+/* line 141, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
 html.microsite .fadeInUp:before { border-width: 11px; }
-@media screen and (min-width: 62em) { /* line 136, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+@media screen and (max-width: 61.9375em) { /* line 146, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .mod-meta-navigation { left: -168px; } }
+@media screen and (min-width: 62em) { /* line 146, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .mod-meta-navigation { width: 300px; } }
-@media screen and (max-width: 61.9375em) { /* line 142, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+@media screen and (max-width: 47.9375em) { /* line 146, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .mod-meta-navigation { left: -100.5%; } }
+@media screen and (max-width: 61.9375em) { /* line 159, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .navigation-is-active .mod-meta-navigation { left: 0px; width: 320px; } }
+@media screen and (max-width: 47.9375em) { /* line 159, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .navigation-is-active .mod-meta-navigation { width: 320px; } }
-@media screen and (max-width: 47.9375em) { /* line 142, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
-  html.microsite .navigation-is-active .mod-meta-navigation { width: 320px; } }
-@media (max-width: 414px) { /* line 142, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+@media (max-width: 414px) { /* line 159, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
   html.microsite .navigation-is-active .mod-meta-navigation { max-width: 100.5% !important; width: 100.5% !important; } }
+/* line 177, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+html.microsite .contact .fadeInUp:before { left: 15%; }
+/* line 180, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+html.microsite .contact .fadeInUp:after { left: 15%; }
+/* line 185, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+html.microsite .accessibility .fadeInUp:before { left: 48%; }
+/* line 188, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+html.microsite .accessibility .fadeInUp:after { left: 48%; }
+/* line 193, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+html.microsite .language .fadeInUp:before { left: 81%; }
+/* line 196, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+html.microsite .language .fadeInUp:after { left: 81%; }
+@media screen and (min-width: 62em) { /* line 203, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .contact .fadeInUp:before { left: 11%; }
+  /* line 206, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .contact .fadeInUp:after { left: 11%; }
+  /* line 211, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .accessibility .fadeInUp:before { left: 36%; }
+  /* line 214, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .accessibility .fadeInUp:after { left: 36%; }
+  /* line 219, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .language .fadeInUp:before { left: 60%; }
+  /* line 222, ../../Private/sass/partials/microsite/mod/_mod-meta-navigation.scss */
+  html.microsite .language .fadeInUp:after { left: 60%; } }
 
 /** brandung _mod-search.scss v1.0.0  Copyright brandung GmbH & Co.KG http://www.brandung.de/  Date: 2014-10-13 MIT License (MIT) */
 /* ========================================================================== mod-search ========================================================================== */
@@ -3238,8 +3285,18 @@ html.microsite .fadeInUp:before { border-width: 11px; }
 
 /* line 6, ../../Private/sass/partials/microsite/mod/_mod-search.scss */
 html.microsite .mod-search.active .field { width: 299px; }
-/* line 9, ../../Private/sass/partials/microsite/mod/_mod-search.scss */
+@media screen and (max-width: 61.9375em) { /* line 6, ../../Private/sass/partials/microsite/mod/_mod-search.scss */
+  html.microsite .mod-search.active .field { width: 99%; } }
+@media screen and (max-width: 47.9375em) { /* line 6, ../../Private/sass/partials/microsite/mod/_mod-search.scss */
+  html.microsite .mod-search.active .field { width: 106%; } }
+/* line 16, ../../Private/sass/partials/microsite/mod/_mod-search.scss */
+html.microsite .mod-search .field { height: 76px; }
+/* line 18, ../../Private/sass/partials/microsite/mod/_mod-search.scss */
 html.microsite .mod-search .field input { width: 208px; }
+@media screen and (min-width: 30em) { /* line 18, ../../Private/sass/partials/microsite/mod/_mod-search.scss */
+  html.microsite .mod-search .field input { width: 80%; } }
+@media screen and (max-width: 29.9375em) { /* line 18, ../../Private/sass/partials/microsite/mod/_mod-search.scss */
+  html.microsite .mod-search .field input { width: 70%; } }
 
 /* mod-simple-teaser */
 /* line 9, ../../Private/sass/partials/mod/_mod-simple-flexslider.scss */
@@ -3554,6 +3611,9 @@ html.microsite .mod-search .field input { width: 208px; }
   .mod-stage-slider .slides > li { max-height: 420px; height: 420px; } }
 /* line 337, ../../Private/sass/partials/mod/_mod-stage-slider.scss */
 .mod-stage-slider.stage-contact-clinic .frontEndEditIconLinks img, .mod-stage-slider.stage-persona .frontEndEditIconLinks img, .mod-stage-slider .slides .frontEndEditIconLinks img { width: 16px; height: 16px; }
+
+/* line 4, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .slide-content { display: none !important; }
 
 /** brandung _mod-stage-static.scss v1.0.0  Copyright brandung GmbH & Co.KG http://www.brandung.de/  Date: 2014-10-23 MIT License (MIT) */
 /* ========================================================================== mod-stage-static ========================================================================== */
@@ -5187,353 +5247,353 @@ html.microsite .mod-search .field input { width: 208px; }
 /* line 114, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .padding-bottom { padding-bottom: 16px; }
 /* line 118, ../../Private/sass/partials/mod/_mod-finder.scss */
-.mod-finder.landingpage { margin-bottom: 30px; }
-/* line 122, ../../Private/sass/partials/mod/_mod-finder.scss */
+.mod-finder.landingpage { margin-bottom: 0px; }
+/* line 123, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder input, .mod-finder select { margin: 0; padding: 0; outline: none; font-family: inherit; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; -ms-appearance: none; appearance: none; }
-/* line 131, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 132, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder option[disabled] { color: #555; }
-/* line 135, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 136, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder select::-ms-expand { display: none; }
-/* line 139, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 140, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder legend { font-weight: 500; margin-bottom: 1em; float: left; }
-/* line 145, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 146, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .sub-legend { display: none; }
-/* line 149, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 150, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .twitter-typeahead { display: block !important; }
-/* line 152, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 153, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .twitter-typeahead .tt-menu { width: 100%; max-height: 150px; overflow: auto; background: #fff; border-left: solid 1px #c6c6c6; border-bottom: solid 1px #c6c6c6; border-right: solid 1px #c6c6c6; }
-/* line 162, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 163, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .twitter-typeahead .tt-suggestion { padding: 6.66667px 0.5em; cursor: pointer; }
-/* line 166, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 167, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .twitter-typeahead .tt-suggestion:hover { background: #f9f9f9; }
-/* line 172, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 173, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-link, .mod-finder .tx-frontendlist-pi-searchbox-reset { width: 200px; text-decoration: underline; font-size: 14px; font-size: 0.875rem; }
-/* line 178, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 179, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-link:hover, .mod-finder .tx-frontendlist-pi-searchbox-reset:hover { text-decoration: none; }
-/* line 183, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 184, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-reset { float: right; text-align: right; margin-top: 3px; }
-/* line 189, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 190, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-wrap { border: 1px solid #c6c6c6; }
-/* line 193, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 194, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox { background: #f3f3f3; border: 1px solid #c6c6c6; margin: 0 0 1.25em 0; position: relative; overflow: hidden; height: auto; width: 100%; }
-/* line 204, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 205, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox.active select, .mod-finder .tx-frontendlist-pi-selectorbox.active span { color: #fff; }
-/* line 209, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 210, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox.active option { color: #565656; }
-@media screen and (min-width: 48em) { /* line 193, ../../Private/sass/partials/mod/_mod-finder.scss */
+@media screen and (min-width: 48em) { /* line 194, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox { float: left; width: 49%; }
-  /* line 218, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 219, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox:nth-child(even) { float: right; } }
-@media only screen and (min-width: 48em) { /* line 224, ../../Private/sass/partials/mod/_mod-finder.scss */
+@media only screen and (min-width: 48em) { /* line 225, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox:hover { border: 1px solid #808487; } }
-/* line 229, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 230, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox label { font-size: 0; }
-/* line 233, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 234, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox select { border: none; position: relative; font-weight: 500; margin-top: -22px; width: 100%; height: 71px; padding: 15px 10px 33px 10px; background: transparent; vertical-align: top; font-size: 14px; z-index: 1; }
-/* line 247, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 248, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox span { font-size: 12px; font-size: 0.75rem; position: absolute; top: 35px; left: 15px; padding: 0 5em 0 0; width: 100%; z-index: 0; }
-@media screen and (min-width: 48em) { /* line 247, ../../Private/sass/partials/mod/_mod-finder.scss */
+@media screen and (min-width: 48em) { /* line 248, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox span { padding: 0; } }
-/* line 260, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 261, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox span:before { display: none !important; }
-/* line 264, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 265, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox span:after { -webkit-border-radius: 15px; -moz-border-radius: 15px; -o-border-radius: 15px; -ms-border-radius: 15px; border-radius: 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-align: center; background: #fff; color: #fff; line-height: 30px; height: 30px; width: 30px; font-size: 20px; font-size: 1.25rem; margin-left: 10px; vertical-align: -30%; border: 1px solid #c6c6c6; color: #c6c6c6; position: absolute; right: 22px; top: -15px; }
-/* line 279, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 280, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox input { width: 100%; padding: .5em 2.5em .5em .5em; margin: 0; border: none; height: 70px; font-size: 1rem; }
-/* line 287, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 288, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox input.tx-frontendlist-pi-searchbox-sword::-webkit-input-placeholder { font-size: 13px; font-size: 0.8125rem; padding-top: 3px; }
-/* line 292, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 293, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox input.tx-frontendlist-pi-searchbox-sword:-moz-placeholder { font-size: 13px; font-size: 0.8125rem; padding-top: 3px; }
-/* line 297, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 298, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox input.tx-frontendlist-pi-searchbox-sword::-moz-placeholder { font-size: 13px; font-size: 0.8125rem; padding-top: 3px; }
-/* line 302, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 303, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox input.tx-frontendlist-pi-searchbox-sword:-ms-input-placeholder { font-size: 13px; font-size: 0.8125rem; padding-top: 3px; }
-/* line 307, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 308, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox input.tx-frontendlist-pi-searchbox-sword.placeholder { font-size: 13px; font-size: 0.8125rem; padding-top: 3px; }
-/* line 314, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 315, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox .btn-lupe { right: 20px; left: auto; font-size: 0; width: 10px; height: 10px; margin-right: 4px; position: absolute; top: 40px; border: 0; background: #fff; }
-/* line 326, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 327, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox .btn-lupe:after { -webkit-border-radius: 15px; -moz-border-radius: 15px; -o-border-radius: 15px; -ms-border-radius: 15px; border-radius: 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-align: center; background: #dadcde; color: #fff; line-height: 30px; height: 30px; width: 30px; font-size: 26px; font-size: 1.625rem; color: #fff; border: 0; top: -20px; right: -10px; width: 30px; height: 30px; position: absolute; display: block; }
-/* line 340, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 341, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-selectorbox .btn-lupe:before { display: none; }
-/* line 346, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 347, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-wrap { float: left; width: 100%; position: relative; }
-/* line 351, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 352, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-wrap input { width: 100%; padding: .5em 2.5em .5em .5em; margin: 0; height: 50px; font-size: 1rem; border: none; }
-/* line 359, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 360, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-wrap input.tx-frontendlist-pi-searchbox-sword::-webkit-input-placeholder { font-size: 13px; font-size: 0.8125rem; padding-top: 3px; }
-/* line 364, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 365, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-wrap input.tx-frontendlist-pi-searchbox-sword:-moz-placeholder { font-size: 13px; font-size: 0.8125rem; padding-top: 3px; }
-/* line 369, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 370, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-wrap input.tx-frontendlist-pi-searchbox-sword::-moz-placeholder { font-size: 13px; font-size: 0.8125rem; padding-top: 3px; }
-/* line 374, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 375, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-wrap input.tx-frontendlist-pi-searchbox-sword:-ms-input-placeholder { font-size: 13px; font-size: 0.8125rem; padding-top: 3px; }
-/* line 380, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 381, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-wrap .btn-lupe { right: 10px; left: auto; font-size: 0; width: 10px; height: 10px; margin-right: 4px; position: absolute; top: 30px; border: 0; background: #fff; }
-/* line 392, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 393, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-wrap .btn-lupe:after { -webkit-border-radius: 15px; -moz-border-radius: 15px; -o-border-radius: 15px; -ms-border-radius: 15px; border-radius: 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-align: center; background: #dadcde; color: #fff; line-height: 30px; height: 30px; width: 30px; font-size: 26px; font-size: 1.625rem; color: #fff; border: 0; top: -20px; right: -10px; width: 30px; height: 30px; position: absolute; display: block; }
-/* line 406, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 407, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-searchbox-wrap .btn-lupe:before { display: none; }
-/* line 412, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 413, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder form input[type=submit] { border: none; color: #fff; padding: 1em; font-weight: bold; font-size: .9em; float: none; max-width: 200px; width: 100%; height: auto; 		/*	margin: 1em auto; <- is this necessary? removed and replaced <janzer@artplan21.de>
 
 		@include respond-min($breakpoint-min-m) {
 			margin: 0;
 			float: right;
 		}*/ margin: 0; float: right; }
-/* line 433, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 434, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .btn-wrap { margin: 0 0 1em 0; float: right; text-align: center; width: 100%; }
-/* line 443, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 444, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .btn-wrap a { display: block; }
-@media screen and (min-width: 48em) { /* line 433, ../../Private/sass/partials/mod/_mod-finder.scss */
+@media screen and (min-width: 48em) { /* line 434, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .btn-wrap { text-align: left; }
-  /* line 450, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 451, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .btn-wrap a { display: inline-block; } }
-/* line 456, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 457, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .btn-search { margin-top: 1em; }
-@media screen and (min-width: 30em) { /* line 456, ../../Private/sass/partials/mod/_mod-finder.scss */
+@media screen and (min-width: 30em) { /* line 457, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .btn-search { width: 100%; }
-  /* line 460, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 461, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .btn-search::before, .mod-finder .btn-search::after { content: ''; display: table; clear: both; }
-  /* line 465, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 466, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .btn-search input { width: 200px; } }
-/* line 469, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 470, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .tx-frontendlist-pi-link { text-align: left; padding: 0 0 1em 0; width: 200px; margin-top: 0; }
-/* line 476, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 477, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder ul { clear: both; padding: 0; list-style: none; max-width: 920px; margin: 0 10px 0 10px; }
-/* line 484, ../../Private/sass/partials/mod/_mod-finder.scss */
-.mod-finder ul li { float: none; width: 100%; position: relative; display: table; }
 /* line 485, ../../Private/sass/partials/mod/_mod-finder.scss */
+.mod-finder ul li { float: none; width: 100%; position: relative; display: table; }
+/* line 486, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder ul li:first-child { padding-left: 0; margin: 0 0 1em 0; }
-/* line 488, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 489, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder ul li:first-child a:before { font-size: 2rem; }
-@media screen and (min-width: 48em) { /* line 484, ../../Private/sass/partials/mod/_mod-finder.scss */
+@media screen and (min-width: 48em) { /* line 485, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li { float: left; margin: 0; width: 49%; }
-  /* line 505, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 506, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li:first-child { margin: 0; }
-  /* line 509, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 510, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li:nth-child(even) { float: right; } }
-/* line 514, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 515, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder ul li a { background: #fff; display: block; font-size: 1rem; font-weight: 400; line-height: 20px; text-align: center; position: relative; padding: 20px 50px; vertical-align: middle; display: table-cell; width: inherit; }
-/* line 528, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 529, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder ul li a:first-child { margin-bottom: 1em; }
-/* line 532, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 533, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder ul li a:before { position: absolute; left: 15px; top: 15px; font-size: 2em; }
-/* line 541, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 542, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder ul li a:after { -webkit-border-radius: 15px; -moz-border-radius: 15px; -o-border-radius: 15px; -ms-border-radius: 15px; border-radius: 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-align: center; background: #dadcde; color: #fff; line-height: 30px; height: 30px; width: 30px; content: "+"; position: absolute; right: 15px; top: 15px; font-size: 1.4em; transition: all ease .3s; }
-@media screen and (min-width: 48em) { /* line 551, ../../Private/sass/partials/mod/_mod-finder.scss */
+@media screen and (min-width: 48em) { /* line 552, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a.active { padding-bottom: 1em; } }
-/* line 557, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 558, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder ul li a.active:after { content: "-"; font-size: 30px; line-height: 25px; transform: rotate(180deg); transform-origin: 50% 50%; }
-/* line 569, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 570, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .finder-tab { display: none; }
-/* line 573, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 574, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder > div, .mod-finder .finder-tab { background: #fff; padding: 1em 1em 0; margin: 0 10px; }
-/* line 580, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 581, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder > div.active, .mod-finder .finder-tab.active { display: block; margin-bottom: 20px; }
-/* line 585, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 586, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder > div .field, .mod-finder .finder-tab .field { width: 100% !important; }
-/* line 590, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 591, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .single-item { padding: 0 0 16px 0; background-color: transparent; }
-/* line 594, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 595, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .single-item fieldset { margin-bottom: 0; }
-/* line 599, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 600, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .row { margin-bottom: 0; }
-/* line 603, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 604, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .headline { display: block; margin: 0 0 1em 0; }
-/* line 608, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 609, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .mod-link { background: #f3f3f3 !important; padding: 10px 15px; -webkit-transition: all ease-in-out .2s; -moz-transition: all ease-in-out .2s; -o-transition: all ease-in-out .2s; -ms-transition: all ease-in-out .2s; transition: all ease-in-out .2s; }
-/* line 614, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 615, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .mod-link:hover { background: #dfdddc !important; }
-/* line 618, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 619, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .mod-link div { word-break: normal; -webkit-hyphens: auto; -moz-hyphens: auto; -o-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
-/* line 623, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 624, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .mod-link strong { color: #565656 !important; }
-/* line 628, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 629, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .lexicon-item { padding: 10px; }
-/* line 632, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 633, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .mod-teaser, .mod-finder .mod-link { background: #f3f3f3; color: #565656; }
-/* line 637, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 638, ../../Private/sass/partials/mod/_mod-finder.scss */
 .mod-finder .mod-teaser:hover, .mod-finder .mod-link:hover { background: #dfdddc; }
-@media screen and (min-width: 30em) { /* line 643, ../../Private/sass/partials/mod/_mod-finder.scss */
+@media screen and (min-width: 30em) { /* line 644, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .reset-link-wrap { width: 200px; }
-  /* line 647, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 648, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-link { text-align: left; margin-top: -50px; } }
 @media screen and (min-width: 48em) { /* line 106, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder { height: 100%; /*> div {
 	 margin-bottom: 1em; // <- is this necessary? removed <janzer@artplan21.de>
 }*/ }
-  /* line 657, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 658, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a { border-bottom: 15px solid; }
-  /* line 660, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 661, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a.active { border-bottom: none; padding-top: 0; }
-  /* line 664, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 665, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a.active:before, .mod-finder ul li a.active:after { top: 15px; }
-  /* line 670, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 671, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a:first-child { margin-bottom: 0; }
-  /* line 679, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 680, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder fieldset { margin-bottom: 20px; }
-  /* line 682, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 683, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder fieldset .btn-wrap + div { clear: both; }
-  /* line 687, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 688, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox span:after { right: 30px; }
-  /* line 692, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 693, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-searchbox-wrap .btn-lupe { right: 20px; }
-  /* line 696, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 697, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-searchbox-wrap input { padding: .5em 4em .5em 1em; } }
 @media screen and (max-width: 48em) { /* line 106, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder { /*&:not(.padding-bottom){
 	padding-bottom: 0; <- is this necessary? removed <janzer@artplan21.de>
 }*/ }
-  /* line 707, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 708, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .finder-tab { margin: 0 0 20px 0; }
-  /* line 711, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 712, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox select { margin-top: -24px; }
-  /* line 715, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 716, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li { margin: 0 0 1em 0; } }
-@media (min-width: 768px) and (max-width: 826px) { /* line 722, ../../Private/sass/partials/mod/_mod-finder.scss */
+@media (min-width: 768px) and (max-width: 826px) { /* line 723, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a:before, .mod-finder ul li a:after { top: 20px; }
-  /* line 728, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 729, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a.active:before, .mod-finder ul li a.active:after { top: 20px; } }
 @media screen and (max-width: 47.9375em) { /* line 106, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder { padding: 5px 0 0 0; /*form input[type=submit] { <- is this necessary? removed <janzer@artplan21.de>
 	margin: 0;
 }*/ }
-  /* line 739, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 740, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul { margin: 0 5px; }
-  /* line 742, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 743, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li { margin-bottom: 5px; }
-  /* line 745, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 746, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li:first-child { margin-bottom: 5px; }
-  /* line 749, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 750, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a { padding: 10px 50px; }
-  /* line 752, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 753, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a:before { font-size: 24px !important; }
-  /* line 756, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 757, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a:before, .mod-finder ul li a:after { top: 8px; }
-  /* line 761, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 762, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a.active:after { line-height: 22px; }
-  /* line 765, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 766, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder ul li a:after { -webkit-border-radius: 12px; -moz-border-radius: 12px; -o-border-radius: 12px; -ms-border-radius: 12px; border-radius: 12px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-align: center; background: #dadcde; color: #fff; line-height: 24px; height: 24px; width: 24px; font-size: 16px; font-size: 1rem; }
-  /* line 773, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 774, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder legend { margin-bottom: 0; }
-  /* line 781, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 782, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .btn-search { margin-bottom: 2em; }
-  /* line 787, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 788, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox select { height: 55px; padding: 0 10px 25px 10px; font-size: 16px; font-size: 1rem; }
-  /* line 793, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 794, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox span { top: 25px; margin-left: 2px; left: 10px; line-height: 12px; }
-  /* line 799, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 800, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox span:after { top: -13px; right: 18px; }
-  /* line 805, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 806, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox input { height: 55px; }
-  /* line 810, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 811, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .tx-frontendlist-pi-selectorbox .btn-lupe { top: 33px; right: 13px; }
-  /* line 815, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 816, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .finder-tab.active { margin-bottom: 10px; }
-  /* line 819, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 820, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder > div { margin: 0 5px; }
-  /* line 823, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 824, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .single-item { margin-bottom: 0px; padding-bottom: 5px; }
-  /* line 828, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 829, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .single-item .btn-lupe { right: 20px; top: 33px; }
-  /* line 832, ../../Private/sass/partials/mod/_mod-finder.scss */
+  /* line 833, ../../Private/sass/partials/mod/_mod-finder.scss */
   .mod-finder .single-item .btn-lupe:after { -webkit-border-radius: 12px; -moz-border-radius: 12px; -o-border-radius: 12px; -ms-border-radius: 12px; border-radius: 12px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-align: center; background: #dadcde; color: #fff; line-height: 24px; height: 24px; width: 24px; font-size: 16px; font-size: 1rem; } }
 
-/* line 841, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 842, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast { /*CONTRAST COLORS OF AREAS -- JUST FOR DEVELOPMENT*/ }
-/* line 843, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 844, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast .mod-finder .mod-link, .color-pattern-contrast .mod-finder .mod-teaser { outline: 2px solid #000 !important; background: #f3f3f3; }
-/* line 847, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 848, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast .mod-finder .mod-link:hover, .color-pattern-contrast .mod-finder .mod-teaser:hover { background: #dfdddc !important; }
-/* line 852, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 853, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast .mod-finder .mod-link strong, .color-pattern-contrast .mod-finder .mod-teaser { color: #000; }
-/* line 857, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 858, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast .mod-finder .tx-frontendlist-pi-selectorbox { background: #fff; }
-/* line 860, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 861, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast .mod-finder .tx-frontendlist-pi-selectorbox span:after { border-color: #000; color: #000; }
-/* line 865, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 866, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast .mod-finder.padding-bottom .tx-frontendlist-pi-searchbox-wrap input { border: 0 !important; }
-/* line 869, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 870, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast .mod-finder .tx-frontendlist-pi-selectorbox:hover { outline: 1px solid #000; }
-/* line 875, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 876, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-2 .mod-finder { background: #003399 !important; }
-/* line 877, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 878, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-2 .mod-finder ul li a { border-color: #003399 !important; }
-/* line 880, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 881, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-2 .mod-finder ul li a:before { color: #003399 !important; }
-/* line 884, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 885, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-2 .mod-finder ul li a:after { background: #003399 !important; }
-/* line 888, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 889, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-2 .mod-finder input.submit { background: #003399 !important; }
-/* line 891, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 892, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-2 .mod-finder button:after { background: #003399 !important; }
-/* line 895, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 896, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-3 .mod-finder { background: #9B0065 !important; }
-/* line 898, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 899, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-3 .mod-finder ul li a { border-color: #9B0065 !important; }
-/* line 901, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 902, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-3 .mod-finder ul li a:before { color: #9B0065 !important; }
-/* line 905, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 906, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-3 .mod-finder ul li a:after { background: #9B0065 !important; }
-/* line 909, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 910, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-3 .mod-finder input.submit { background: #9B0065 !important; }
-/* line 912, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 913, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-3 .mod-finder button:after { background: #9B0065 !important; }
-/* line 916, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 917, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-4 .mod-finder { background: #66563c !important; }
-/* line 918, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 919, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-4 .mod-finder ul li a { border-color: #66563c !important; }
-/* line 921, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 922, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-4 .mod-finder ul li a:before { color: #66563c !important; }
-/* line 925, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 926, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-4 .mod-finder ul li a:after { background: #66563c !important; }
-/* line 929, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 930, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-4 .mod-finder input.submit { background: #66563c !important; }
-/* line 932, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 933, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-4 .mod-finder button:after { background: #66563c !important; }
-/* line 936, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 937, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-5 .mod-finder { background: #AA6100 !important; }
-/* line 938, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 939, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-5 .mod-finder ul li a { border-color: #AA6100 !important; }
-/* line 941, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 942, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-5 .mod-finder ul li a:before { color: #AA6100 !important; }
-/* line 945, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 946, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-5 .mod-finder ul li a:after { background: #AA6100 !important; }
-/* line 949, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 950, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-5 .mod-finder input.submit { background: #AA6100 !important; }
-/* line 952, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 953, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-5 .mod-finder button:after { background: #AA6100 !important; }
-/* line 956, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 957, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-6 .mod-finder { background: #252525 !important; }
-/* line 958, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 959, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-6 .mod-finder ul li a { border-color: #252525 !important; }
-/* line 961, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 962, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-6 .mod-finder ul li a:before { color: #252525 !important; }
-/* line 965, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 966, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-6 .mod-finder ul li a:after { background: #252525 !important; }
-/* line 969, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 970, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-6 .mod-finder input.submit { background: #252525 !important; }
-/* line 972, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 973, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-contrast.color-pattern-1 .color-pattern-6 .mod-finder button:after { background: #252525 !important; }
 
 /*** finder result ***/
-/* line 992, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 993, ../../Private/sass/partials/mod/_mod-finder.scss */
 .color-pattern-1 .finder-result .mod-finder, .color-pattern-2 .finder-result .mod-finder, .color-pattern-3 .finder-result .mod-finder, .color-pattern-4 .finder-result .mod-finder, .color-pattern-5 .finder-result .mod-finder, .color-pattern-6 .finder-result .mod-finder, .color-pattern-6 .finder-result .mod-finder, .finder-result .mod-finder > div { background: #f6f3ed; padding: 40px 5px 0 5px; /** media query!! **/ margin-bottom: 40px; }
 
-/* line 1006, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 1007, ../../Private/sass/partials/mod/_mod-finder.scss */
 .finder-result .mod-finder legend { font-size: 2rem; /** media query!! **/ font-weight: 300; }
-/* line 1011, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 1012, ../../Private/sass/partials/mod/_mod-finder.scss */
 .finder-result .mod-finder .sub-legend { display: block; clear: both; margin-bottom: 2em; }
-/* line 1017, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 1018, ../../Private/sass/partials/mod/_mod-finder.scss */
 .finder-result .tx-indexedsearch-browsebox { margin-left: 10px; margin-right: 10px; }
 
 /* Firefox button:after is not hverable/clickable so make the original button bigger */
 /* dont add this fix for the old ie*/
-/* line 1027, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 1028, ../../Private/sass/partials/mod/_mod-finder.scss */
 .wrapper .mod-finder .tx-frontendlist-pi-searchbox-wrap .btn-lupe { right: 10px; left: auto; width: 30px; height: 30px; margin-right: 4px; top: 10px; }
 
-/* line 1036, ../../Private/sass/partials/mod/_mod-finder.scss */
+/* line 1037, ../../Private/sass/partials/mod/_mod-finder.scss */
 .wrapper .mod-finder .tx-frontendlist-pi-searchbox-wrap .btn-lupe::after { top: 0; right: 0; width: 30px; height: 30px; }
 
 /** brandung mod-article.scss v1.0.0  Copyright brandung GmbH & Co.KG http://www.brandung.de/  Date: 2014-09-23 MIT License (MIT) */
@@ -6125,17 +6185,21 @@ figure figcaption strong { display: block; }
 .list-facilities li { background: #f6f3ed; margin: 1em 0 0 0; padding: 1em; }
 /* line 190, ../../Private/sass/partials/mod/_mod-search-events.scss */
 .list-facilities h3 { margin-bottom: 10px; }
-/* line 194, ../../Private/sass/partials/mod/_mod-search-events.scss */
-.list-facilities p { margin-top: 15px; }
-/* line 198, ../../Private/sass/partials/mod/_mod-search-events.scss */
+/* line 192, ../../Private/sass/partials/mod/_mod-search-events.scss */
 .list-facilities h3 a { text-decoration: underline; }
+/* line 195, ../../Private/sass/partials/mod/_mod-search-events.scss */
+.list-facilities p { margin-top: 15px; }
+/* line 197, ../../Private/sass/partials/mod/_mod-search-events.scss */
+.list-facilities p a { text-decoration: underline; }
+/* line 199, ../../Private/sass/partials/mod/_mod-search-events.scss */
+.list-facilities p a:hover, .list-facilities p a:focus { text-decoration: none; }
 
 /* Firefox: or else large the characters get cut off,
 the !important was already in the original */
-/* line 205, ../../Private/sass/partials/mod/_mod-search-events.scss */
+/* line 207, ../../Private/sass/partials/mod/_mod-search-events.scss */
 .wrapper .mod-search-events .mod-form ul input, .wrapper .mod-search-jobs ul input { padding-top: 1.2em !important; padding-bottom: 1.2em !important; }
 
-@media screen and (min-width: 62em) { /* line 212, ../../Private/sass/partials/mod/_mod-search-events.scss */
+@media screen and (min-width: 62em) { /* line 214, ../../Private/sass/partials/mod/_mod-search-events.scss */
   #main .mod-search-events .mod-form ul .fields:first-child .single-filter { margin-left: 0; } }
 /** brandung _mod-search-jobs.scss v1.0.0  Copyright brandung GmbH & Co.KG http://www.brandung.de/  Date: 2014-09-30 MIT License (MIT) */
 /* ========================================================================== mod-search-topics ========================================================================== */
