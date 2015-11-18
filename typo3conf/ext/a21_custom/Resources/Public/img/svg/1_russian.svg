@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="s" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
+<g>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M13.5,1.5c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12s-12-5.4-12-12C1.5,6.9,6.9,1.5,13.5,1.5z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<rect x="-6" y="1.5" fill="#FFFFFF" width="39" height="12"/>
+			<rect x="-6" y="13.5" fill="#D52B1E" width="39" height="12"/>
+			<rect x="-6" y="9.5" fill="#0039A6" width="39" height="8"/>
+		</g>
+	</g>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" d="M13.5,1.5
+		c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12s-12-5.4-12-12C1.5,6.9,6.9,1.5,13.5,1.5z"/>
+</g>
+</svg>
