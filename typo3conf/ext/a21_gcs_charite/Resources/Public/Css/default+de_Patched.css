@@ -603,7 +603,7 @@ div.gsc-clear-button {
 }
 
 .gsc-results-close-btn {
-	background-image: url("http://www.google.com/images/nav_logo114.png");
+	background-image: url("//www.google.com/images/nav_logo114.png");
 	background-repeat: no-repeat;
 	background-position: -140px -230px;
 	float: right;
@@ -707,7 +707,7 @@ input.gsc-input {
 	padding-left: 16px;
 	background-repeat: no-repeat;
 	background-position: 1px 3px;
-	background-image: url('http://www.google.com/uds/css/blue_check.gif');
+	background-image: url('//www.google.com/uds/css/blue_check.gif');
 }
 
 .gsc-resultsHeader {
@@ -733,11 +733,11 @@ input.gsc-input {
 }
 
 .gsc-resultsHeader td.gsc-twiddle-closed div.gsc-twiddle {
-	background-image: url('http://www.google.com/uds/css/arrow_close.gif');
+	background-image: url('//www.google.com/uds/css/arrow_close.gif');
 }
 
 .gsc-resultsHeader td.gsc-twiddle-opened div.gsc-twiddle {
-	background-image: url('http://www.google.com/uds/css/arrow_open.gif');
+	background-image: url('//www.google.com/uds/css/arrow_open.gif');
 }
 
 .gsc-resultsHeader .gsc-title {
@@ -783,7 +783,7 @@ input.gsc-input {
 	padding-right: 12px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url('http://www.google.com/uds/css/settings.gif');
+	background-image: url('//www.google.com/uds/css/settings.gif');
 }
 
 .gsc-tabsArea {
@@ -1286,7 +1286,7 @@ div.gs-action.fullscreen a.gs-action,
 div.gs-action.generic a.gs-action,
 div.gs-action.link a.gs-action {
 	padding-left: 18px;
-	background: transparent url('http://www.google.com/cse/images/action_icons_sprite.gif') no-repeat;
+	background: transparent url('//www.google.com/cse/images/action_icons_sprite.gif') no-repeat;
 }
 
 div.gs-action.cart a.gs-action {
@@ -2234,7 +2234,7 @@ input.gsc-label-result-label-prefix-invisible {
 }
 
 .gsc-richsnippet-popup-close-button {
-	background-image: url("http://www.google.com/images/nav_logo114.png");
+	background-image: url("//www.google.com/images/nav_logo114.png");
 	background-repeat: no-repeat;
 	background-position: -140px -230px;
 	float: right;

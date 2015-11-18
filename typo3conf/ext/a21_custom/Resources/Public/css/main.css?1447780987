@@ -684,7 +684,7 @@ input, textarea, select { font-size: 16px; font-size: 1rem; }
 	*
 	*
 	========================================================================== */
-@font-face { font-family: 'charite-icons'; src: url("../font/charite-icons.eot?1bbzt4"); src: url("../font/charite-icons.eot?") format("embedded-opentype"), url("../font/charite-icons.woff?1bbzt4") format("woff"), url("../font/charite-icons.ttf?1bbzt4") format("truetype"), url("../font/charite-icons.svg?1bbzt4") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'charite-icons'; src: url("../font/charite-icons.eot?1bbzt4"); src: url("../font/charite-icons.eot?#iefix1bbzt4") format("embedded-opentype"), url("../font/charite-icons.woff?1bbzt4") format("woff"), url("../font/charite-icons.ttf?1bbzt4") format("truetype"), url("../font/charite-icons.svg?1bbzt4#charite-icons") format("svg"); font-weight: normal; font-style: normal; }
 /** 	icon-circle  	desc:	create a cycle around an icon  	@param:	$size	[number]		//diameter of the cycle  */
 /** 	icon-background  	desc:	create a cycle around an icon with a background-color  	@param:	$size	[number]		//diameter of the cycle 	@param:	$color	[string]		//color  */
 /* line 92, ../../Private/sass/partials/_icons.scss */
