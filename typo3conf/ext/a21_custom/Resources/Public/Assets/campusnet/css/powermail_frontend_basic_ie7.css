@@ -1,0 +1,12 @@
+/******************** POWERMAIL ********************/
+fieldset.tx-powermail-pi1_fieldset legend {
+	margin: 0 0 15px 35px;
+}
+fieldset.tx-powermail-pi1_fieldset fieldset legend {
+	position: relative;
+	padding-bottom: 3px;
+}
+fieldset.tx-powermail-pi1_fieldset div.tx_powermail_pi1_fieldwrap_html_radio input.powermail_radio {
+	/* Radiobuttons */
+	margin: auto;
+}

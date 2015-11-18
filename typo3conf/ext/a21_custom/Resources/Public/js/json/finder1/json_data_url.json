@@ -1,0 +1,87 @@
+{
+    "cat0": [
+        {
+            "value": 0,
+            "caption": "Alle Fachgebiete",
+            "cat1": true,
+            "cat2": true
+        },
+        {
+            "value": 1,
+            "caption": "Allergologie",
+            "cat1": [1, 2, 3, 4],
+            "cat2": []
+        },
+        {
+            "value": 11,
+            "caption": "Allgemeinchirurgie",
+            "cat1": [1, 2],
+            "cat2": false
+        },
+        {
+            "value": 3,
+            "caption": "Allgemeinmedizin",
+            "cat1": [1, 3],
+            "cat2": false
+        }
+    ],
+    "cat1": [
+        {
+            "value": 0,
+            "caption": "Alle Patientengruppen",
+            "cat0": true,
+            "cat2": true
+        },
+        {
+            "value": 2,
+            "caption": "Erwachsene",
+            "cat0": [1, 11],
+            "cat2": []
+        },
+        {
+            "value": 3,
+            "caption": "Frauen",
+            "cat0": [1, 3],
+            "cat2": []
+        },
+        {
+            "value": 1,
+            "caption": "Kinder",
+            "cat0": [11, 3],
+            "cat2": false
+        },
+        {
+            "value": 4,
+            "caption": "Senioren",
+            "cat0": [11],
+            "cat2": []
+        }
+    ],
+    "cat2": [
+        {
+            "value": 9,
+            "caption": "CBB: Campus Berlin Buch",
+            "cat0": true,
+            "cat1": true
+        },
+        {
+            "value": 10,
+            "caption": "CBF: Campus Benjamin Franklin",
+            "cat0": [1],
+            "cat1": []
+        },
+        {
+            "value": 11,
+            "caption": "CCM: Campus Charité Mitte",
+            "cat0": [11],
+            "cat1": [2, 3, 4]
+        },
+        {
+            "value": 12,
+            "caption": "CVK: Campus Virchow-Klinikum",
+            "cat0": [1, 3],
+            "cat1": false
+        }
+    ],
+    "next": "json_data_url-2.json"
+}

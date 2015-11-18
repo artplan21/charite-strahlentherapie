@@ -1,0 +1,29 @@
+{
+	"id": "cat2",
+	"cat2": [
+		{
+			"value": 0,
+			"caption": "Alle Experten",
+			"cat0": true,
+			"cat1": true
+		},
+		{
+			"value": 1,
+			"caption": "Baumann, Univ. Prof. Dr. Gert",
+			"cat0": [1],
+			"cat1": [1]
+		},
+		{
+			"value": 2,
+			"caption": "Bechtel, Timo",
+			"cat0": [2],
+			"cat1": [2]
+		},
+		{
+			"value": 3,
+			"caption": "Bieberstein, Stefani",
+			"cat0": [3],
+			"cat1": [3]
+		}
+	]
+}

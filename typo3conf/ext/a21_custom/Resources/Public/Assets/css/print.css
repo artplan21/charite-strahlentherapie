@@ -1,0 +1,87 @@
+#leftColumn,
+#general_navi,
+#target_group_navi,
+#header,
+#pagefunctions,
+#footer .metanavi,
+#rightColumn,
+#copyright {
+	display: none;
+}
+
+body {
+	text-align: left;
+}
+
+#wrapper {
+	width: 650px;
+	min-width: 650px;
+	max-width: 650px;
+
+	margin: 20px 0 0 0;
+
+	position: relative;
+}
+
+.adress_ms {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+
+#outer {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#logo-print {
+	display: block;
+	margin-left: -5px;
+	clear:both;
+}
+
+#centreColumn #breadcrumb {
+	text-align: right;
+	width: 608px;
+	left: 0;
+	background: #FFFFFF;
+
+	clear: both;
+	margin-top: 30px;
+}
+
+#centreColumn {
+	clear: both;
+}
+
+#print-footer {
+	display: block;
+}
+
+
+.contentWrap a,
+.contentWrap a:hover,
+.contentWrap a:active,
+.contentWrap a:focus {
+	border-bottom: none;
+}
+
+#breadcrumb p span a,
+#breadcrumb p a:hover,
+#breadcrumb p a:active,
+#breadcrumb p a:focus {
+	border-bottom: none;
+}
+
+#mapouterwrap {
+	overflow:hidden;
+}
+
+.showInPrint {
+	display: block ;
+}
+
+.hideInPrint {
+	display: none;
+}

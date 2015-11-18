@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<opml version="1.0">
+  <head>
+    <title>RSS 2.0-Feeds von www.charite.de</title>
+  </head>
+  <body>
+    <outline text="Aktuelle Pressemitteilungen von www.charite.de" title="Aktuelle Pressemitteilungen von www.charite.de" description="Aktuelle Pressemitteilungen von www.charite.de" type="pie" htmlUrl="http://produktion-relaunch.charite.de/die_charite/presse/pressemitteilungen/" xmlUrl="http://produktion-relaunch.charite.de/service/pressemitteilung/rss2feed.xml"/>
+    <outline text="Aktuelle Veranstaltungen von www.charite.de" title="Aktuelle Veranstaltungen von www.charite.de" description="Aktuelle Veranstaltungen von www.charite.de" type="pie" htmlUrl="http://produktion-relaunch.charite.de/die_charite/veranstaltungen/" xmlUrl="http://produktion-relaunch.charite.de/service/veranstaltung/rss2feed.xml"/>
+    <outline text="Aktuelle Stellenangebote von www.charite.de" title="Aktuelle Stellenangebote von www.charite.de" description="Aktuelle Stellenangebote von www.charite.de" type="pie" htmlUrl="http://produktion-relaunch.charite.de/karriere/stellenboerse/" xmlUrl="http://produktion-relaunch.charite.de/service/stellenangebot/rss2feed.xml"/>
+    <outline text="Aktuelle Meldungen und Informationen zu Studium und Lehre von www.charite.de" title="Aktuelle Meldungen und Informationen zu Studium und Lehre von www.charite.de" description="Aktuelle Meldungen und Informationen zu Studium und Lehre von www.charite.de" type="pie" htmlUrl="http://produktion-relaunch.charite.de/studium_lehre/" xmlUrl="http://produktion-relaunch.charite.de/service/studium/rss2feed.xml"/>
+  </body>
+</opml>

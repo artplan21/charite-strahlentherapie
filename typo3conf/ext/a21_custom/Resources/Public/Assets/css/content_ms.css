@@ -1,0 +1,72 @@
+#rightColumn h2 {
+	color: #333333;
+	border-left: 1px solid #005EBB;
+}
+
+ul.csc-bulletlist,
+.contentWrap ul {
+	margin: 0 0 0 16px;
+	list-style-image : url(	bulletlist-ms.gif);
+}
+
+ul.csc-bulletlist,
+.contentWrap ul {
+	margin: 0 0 0 16px;
+	list-style-image : url(	bulletlist-ms.gif);
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                   links                             */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.contentWrap a,
+.contentWrap .gray a,
+.contentWrap .csc-frame-frame1 a,
+.contentWrap .contenttable .tr-odd a,
+.contentWrap .gs-webResult.gs-result a.gs-title,
+.contentWrap .gs-webResult.gs-result a.gs-title:link,
+.contentWrap .gs-webResult.gs-result a.gs-title:hover,
+.contentWrap .gs-webResult.gs-result a.gs-title b,
+.contentWrap .gs-webResult.gs-result a.gs-title:link b,
+.contentWrap .gs-webResult.gs-result a.gs-title:hover b {
+	color: #005EBB;
+}
+
+.contentWrap a:visited,
+.contentWrap .gray a:visited,
+.contentWrap .csc-frame-frame1 a:visited,
+.contentWrap .contenttable .tr-odd a:visited,
+.contentWrap .gs-webResult.gs-result a.gs-title:visited,
+.contentWrap .gs-webResult.gs-result a.gs-title:visited b {
+	color: #4593D1;
+}
+
+.contentWrap a.mail:visited {
+	background: transparent url(mail.gif) no-repeat 0 2px;
+	padding: 0 0 0 25px;
+}
+
+.contentWrap a.external-link:focus {
+	background-color: #E5E5E5;
+}
+
+
+
+.detail .floatleft img {
+	margin: 5px 10px 5px 0;
+}
+
+.detail .floatright img {
+	margin: 5px 5px 5px 10px;
+}
+
+.contentWrap .jobs .detail .csc-frame-frame1 {
+	border-bottom: none;
+
+	padding: 1px 20px 5px 20px;
+}
+
+.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead h2 {
+	border-bottom: 6px solid #005EBB;
+}

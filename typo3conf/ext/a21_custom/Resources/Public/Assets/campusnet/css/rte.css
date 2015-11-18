@@ -1,0 +1,148 @@
+/***** tables *****/
+table {
+	width: 100%;
+	margin: 8px 0 8px 0;
+	border-collapse: collapse;
+	background-color: #eeeeee;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: left;
+	line-height: 134%;
+	vertical-align: top;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+table.curriculum {
+}
+
+table.event {
+}
+
+table.termine {
+}
+
+table.termine_breit {
+}
+
+table.adresse {
+}
+
+table.semester {
+}
+
+table.timetable {
+}
+
+caption {
+	text-align: left;
+	margin: 15px 0 10px 0;
+	padding: 3px 0 1px 4px;
+	font-weight: bold;
+	color: white;
+	background-color: #999;
+}
+
+td,
+th,
+td.ZwischenTitel {
+	padding: 3px;
+	border: 1px solid #fff;
+	vertical-align: top;
+	text-align: left;
+	font-weight: normal;
+}
+
+th,
+td.ZwischenTitel {
+	background-color: #dddddd;
+}
+
+tr.Abschnitt {
+	padding: 3px;
+	border-width: 8px 1px 8px 1px;
+	border-style: solid;
+	border-color: #ffffff;
+	vertical-align: top;
+	text-align: left;
+	color: #666;
+}
+
+.adresse tr > td {
+	width: 26%;
+}
+
+.adresse tr > td + td {
+	width: 74%;
+}
+
+.event tr > th {
+	text-align: center;
+	width: 6.7%;
+}
+
+.event tr > th + th {
+	width: 45.8%;
+}
+
+.event tr > th + th + th {
+	width: 47.5%;
+}
+
+.termine tr > td {
+	width: 20%;
+}
+
+.termine tr > td + td {
+	width: 94%;
+}
+
+.termine_breit tr > td {
+	width: 30%;
+}
+
+.termine_breit tr > td + td {
+	width: 94%;
+}
+
+.curriculum th {
+	width: 6.66%;
+}
+
+.curriculum tr > th {
+	text-align: right;
+}
+
+.curriculum tr > th + th {
+	text-align: center;
+}
+
+.semester tr > th {
+	width: 55.8%;
+}
+
+.semester tr > th + th {
+	width: 5.1%;
+	text-align: center;
+}
+
+.semester tr > th + th + th + th + th + th {
+	width: 10.2%;
+}
+
+.semester tr > th + th + th + th + th + th {
+	width: 13.6%;
+}
+
+.semester tr > td + td {
+	text-align: center;
+}
+
+.timetable tr > th {
+	width: 24.6%
+}
+
+.timetable tr > th + td {
+	width: 75.4%
+}
+
