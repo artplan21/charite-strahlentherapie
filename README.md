@@ -1,1 +1,0 @@
-# charite-microsite-prototype
