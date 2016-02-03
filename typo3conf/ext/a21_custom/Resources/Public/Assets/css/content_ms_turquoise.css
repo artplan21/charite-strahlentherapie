@@ -1,0 +1,145 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                   header                            */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.facilityname {
+	background: #1288AA;
+}
+
+.version2 p {
+	background: #1288AA;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                   MAIN MENU                         */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#mainnavi li a,
+#mainnavi ul li strong {
+	background: url(ms_turquoise/mainnavi_no.gif) no-repeat top right;
+}
+
+#mainnavi ul li a:hover,
+#mainnavi ul li a:focus,
+#mainnavi ul li a:active,
+#mainnavi ul li strong,
+#mainnavi ul li.act a {
+	background: url(ms_turquoise/mainnavi_act.gif) no-repeat top right;
+}
+
+.blue {
+	background: #1288AA;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                   leftColumn                        */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#leftColumn #subnavi ul li a,
+#leftColumn #subnavi ul li strong {
+	background-color: #0E6A84;
+}
+
+/************** 2. level ****************/
+
+	#leftColumn #subnavi ul ul li a,
+	#leftColumn #subnavi ul ul li strong {
+		background: #1288AA;
+	}
+
+	#leftColumn #subnavi ul ul li a:hover,
+	#leftColumn #subnavi ul ul li a:active,
+	#leftColumn #subnavi ul ul li a:focus,
+	#leftColumn #subnavi ul ul li strong,
+	#leftColumn #subnavi ul ul li.subnavi-act a {
+		background: #0E6A84 url(subnavi-act.gif) no-repeat 0 0.8em;
+	}
+
+	/************** 3. level ****************/
+	#leftColumn #subnavi ul ul li.subnavi-act ul li a,
+	#leftColumn #subnavi ul ul li.subnavi-act ul li strong {
+		background: #1288AA;
+	}
+
+	#leftColumn #subnavi ul ul li.subnavi-act ul li a:hover,
+	#leftColumn #subnavi ul ul li.subnavi-act ul li a:active,
+	#leftColumn #subnavi ul ul li.subnavi-act ul li a:focus,
+	#leftColumn #subnavi ul ul li.subnavi-act ul li strong,
+	#leftColumn #subnavi ul ul li.subnavi-act ul li.subnavi-act a {
+		background: #0E6A84 url(subnavi-act.gif) no-repeat 0 0.8em;
+	}
+
+	/************** 4. level ****************/
+	#leftColumn #subnavi ul ul li.subnavi-act ul li.subnavi-act ul li a,
+	#leftColumn #subnavi ul ul li.subnavi-act ul li.subnavi-act ul li strong {
+		background: #1288AA;
+	}
+
+	#leftColumn #subnavi ul ul li.subnavi-act ul li.subnavi-act ul li a:hover,
+	#leftColumn #subnavi ul ul li.subnavi-act ul li.subnavi-act ul li a:active,
+	#leftColumn #subnavi ul ul li.subnavi-act ul li.subnavi-act ul li a:focus,
+	#leftColumn #subnavi ul ul li.subnavi-act ul li.subnavi-act ul li strong {
+		background: #0E6A84 url(subnavi-act.gif) no-repeat 0 0.8em;
+	}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                  LOCATION and CENTER                */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#metainfo .location {
+	background: transparent url(ms_turquoise/icon-location.gif) no-repeat top left;
+}
+
+#metainfo .centre {
+	background: transparent url(ms_turquoise/icon-chariteCentre.gif) no-repeat top left;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#rightColumn h2 {
+	border-left: 1px solid #1288AA;
+}
+
+ul.csc-bulletlist,
+.contentWrap ul {
+	list-style-image : url(ms_turquoise/bulletlist-ms.gif);
+}
+
+/* djob 21032013 - war doppelt kopiert
+ul.csc-bulletlist,
+.contentWrap ul {
+	list-style-image : url(ms_turquoise/bulletlist-ms.gif);
+}
+*/
+
+/* djob 21032013 */
+table.adress ul.projects {
+	list-style-image : url(ms_turquoise/bulletlist-ms.gif);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                   links                             */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.contentWrap a,
+.contentWrap .gray a,
+.contentWrap .csc-frame-frame1 a,
+.contentWrap .contenttable .tr-odd a,
+.contentWrap .gs-webResult.gs-result a.gs-title,
+.contentWrap .gs-webResult.gs-result a.gs-title:link,
+.contentWrap .gs-webResult.gs-result a.gs-title:hover,
+.contentWrap .gs-webResult.gs-result a.gs-title b,
+.contentWrap .gs-webResult.gs-result a.gs-title:link b,
+.contentWrap .gs-webResult.gs-result a.gs-title:hover b {
+	color: #1288AA;
+}
+
+.contentWrap a:visited,
+.contentWrap .gray a:visited,
+.contentWrap .csc-frame-frame1 a:visited,
+.contentWrap .contenttable .tr-odd a:visited,
+.contentWrap .gs-webResult.gs-result a.gs-title:visited,
+.contentWrap .gs-webResult.gs-result a.gs-title:visited b {
+	color: #0E6A84;
+}
+
+.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead h2 {
+	border-bottom: 6px solid #1288AA;
+}

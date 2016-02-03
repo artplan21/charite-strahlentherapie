@@ -1,0 +1,15 @@
+* {
+	font-size:12px;
+	color:#333;
+	background-color:transparent;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, div, td, th,
+caption, form, fieldset, label, select, input,
+textarea, address, blockquote, nobr {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+body {
+	padding:15px;
+}

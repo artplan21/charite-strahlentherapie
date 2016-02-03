@@ -1,0 +1,156 @@
+#wrapper {
+	width: auto;
+	width: expression(document.body.clientWidth < 987 ? "984px" : document.body.clientWidth > 1283 ? "1280px" : "auto");
+	padding-right: 5px;
+}
+
+#search,
+#emergency_button,
+#right-column #functions {
+	margin-right: 5px;
+}
+
+#leftColumn .contentWrap  {
+	width: 12.9em;
+}
+
+#centreColumn {
+	height: 500px;
+}
+
+#header_top #functions div.first {
+	padding: 0.6em 6px 0 0;
+}
+
+#rightColumn h2 {
+	height: 1px;
+}
+
+#leftColumn #subnavi ul li {
+	height: 1px;
+}
+
+#leftColumn #subnavi ul ul ul {
+	margin: 0 0 3px 0;
+}
+
+#footer #pagefunctions {
+	height: 1px;
+}
+
+.list .item {
+	height: 1px;
+}
+
+.uid-gray {
+	width: 45%;
+}
+
+.facilities .location {
+	width: 5.7em;
+}
+
+
+#header_images #search #search_button,
+.tx-list-pi-searchbox-button,
+.tx-list-pi1-searchbox-button {
+	padding: 0 3px 0 0;
+}
+
+
+.csc-frame-frame1{
+	height: 1px;
+}
+
+#leftColumn .csc-textpic-imagewrap {
+	margin-right: 0;
+}
+
+.contenttable {
+	width:95%;
+}
+
+.contentWrap ul.csc-menu-7 ul {
+	font-size: 0.85em;
+}
+
+.tx-indexedsearch .result-count-tmpl-css {
+	margin-top:-1.8em;
+}
+
+
+/*
+vertically replayced metanavi in subpages
+*/
+.metanavi1 li strong {
+	line-height: 1.42em;
+}
+
+
+.metanavi2 ul {
+	padding-left:0.8em !important;
+}
+
+
+.metanavi2 ul li {
+
+	margin-left:0 !important;
+}
+
+
+#footer #pagefunctions ul li a {
+	height:2.5em;
+}
+
+
+/*
+facilities missing underline fix
+*/
+.facilities .list .item .inner .name p a.external-link {
+
+}
+
+.facilities .list .item .inner .name p {
+	border:1px solid #ffffff !important;
+}
+
+.facilities .list .gray .inner .name p {
+	border:1px solid #F2F2F2 !important;
+}
+
+
+.filelinks div {
+	position: relative;
+}
+
+
+.contentWrap .hidden {
+	display:none;
+}
+
+#functions div.selectlang {
+	margin: 1.5em 1.5em 0 0;
+}
+
+.marg-switcher {
+	margin: 2.2em 0 0 0;
+}
+
+#functions div.selectmenu select {
+	width: 10.6em;
+}
+
+
+#c20 {
+	display: block;
+}
+
+.facilityname p {
+	padding-top: 2px;
+	margin-bottom: -0.08ex;
+}
+
+.gray,
+.csc-frame-frame1 {
+	overflow:hidden;
+}
