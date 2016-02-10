@@ -1842,14 +1842,24 @@ footer .col-l-3 a { margin-left: 0; }
 /* line 7, ../../Private/sass/partials/microsite/_footer.scss */
 html.microsite footer .contact-wrapper a:hover, html.microsite footer .contact-wrapper a:focus { text-decoration: underline !important; }
 /* line 11, ../../Private/sass/partials/microsite/_footer.scss */
-html.microsite footer ul.meta-navi, html.microsite footer ul.service-navi { height: auto; width: auto; height: auto; width: auto; height: auto; width: auto; }
+html.microsite footer .contact-wrapper .contact-icon-wrap { margin-top: -10px; }
 /* line 15, ../../Private/sass/partials/microsite/_footer.scss */
-html.microsite footer ul.meta-navi li, html.microsite footer ul.service-navi li { float: none !important; }
-/* line 30, ../../Private/sass/partials/microsite/_footer.scss */
-html.microsite .contact-wrapper { margin: 0 10px; }
-/* line 34, ../../Private/sass/partials/microsite/_footer.scss */
-html.microsite .award-wrapper { margin-left: 10px; }
+html.microsite footer .contact-wrapper .contact-icon-wrap a[class*="icon-"]:before { width: 48px; height: 48px; font-size: 46px; border-radius: 24px; line-height: 48px; background: #aee5d8; margin-right: 4px; }
+/* line 25, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite footer .contact-wrapper .contact-icon-wrap a strong { position: relative; top: -15px; font-size: 24px; }
+@media (max-width: 340px) { /* line 30, ../../Private/sass/partials/microsite/_footer.scss */
+  html.microsite footer .contact-wrapper .contact-icon-wrap a strong span { margin-left: 50px; } }
 /* line 38, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite footer .contact-wrapper .contact-text-wrap { padding-left: 52px; margin-top: -18px; }
+/* line 44, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite footer ul.meta-navi, html.microsite footer ul.service-navi { height: auto; width: auto; height: auto; width: auto; height: auto; width: auto; }
+/* line 48, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite footer ul.meta-navi li, html.microsite footer ul.service-navi li { float: none !important; }
+/* line 63, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite .contact-wrapper { margin: 0 10px; }
+/* line 67, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite .award-wrapper { margin-left: 10px; }
+/* line 71, ../../Private/sass/partials/microsite/_footer.scss */
 html.microsite ul.meta-navi, html.microsite ul.service-navi { margin-left: 10px; }
 
 /** brandung navigation.scss v1.0.0  Copyright brandung GmbH & Co.KG http://www.brandung.de/  Date: 2014-09-23 MIT License (MIT) */
@@ -3550,8 +3560,38 @@ html.microsite .mod-search .field input { width: 208px; width: 80%; }
 /* line 337, ../../Private/sass/partials/mod/_mod-stage-slider.scss */
 .mod-stage-slider.stage-contact-clinic .frontEndEditIconLinks img, .mod-stage-slider.stage-persona .frontEndEditIconLinks img, .mod-stage-slider .slides .frontEndEditIconLinks img { width: 16px; height: 16px; }
 
-/* line 4, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
-html.microsite .slide-content { display: none !important; }
+/* line 3, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .mod-stage-slider { margin-top: 0; padding-top: 75px; /* desktop */ padding-top: 0; }
+/* line 14, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .flexslider .flex-direction-nav li { height: 100%; width: 150px; position: absolute; top: 0; }
+/* line 20, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .flexslider .flex-direction-nav li a { -webkit-transition: all ease .3s; -moz-transition: all ease .3s; -o-transition: all ease .3s; -ms-transition: all ease .3s; transition: all ease .3s; opacity: 0; }
+/* line 27, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .flexslider .flex-direction-nav li:first-child:hover a, html.microsite .flexslider .flex-direction-nav li:first-child:focus a, html.microsite .flexslider .flex-direction-nav li:last-child:hover a, html.microsite .flexslider .flex-direction-nav li:last-child:focus a { opacity: 1; }
+/* line 33, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .flexslider .flex-direction-nav li:first-child { left: 0; }
+/* line 37, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .flexslider .flex-direction-nav li:last-child { right: 0; }
+/* line 43, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .slide-content { background: none; width: auto; }
+@media (max-width: 767px) { /* line 43, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+  html.microsite .slide-content { right: 20px; } }
+@media (max-width: 566px) { /* line 43, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+  html.microsite .slide-content { margin-bottom: 20px; } }
+/* line 55, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .slide-content .header-wrap { overflow: hidden; }
+/* line 58, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .slide-content .header-wrap h2 { margin-bottom: 6px; padding: 10px 15px; max-width: none; color: white; background-color: #1D9A73; float: right; font-weight: 500; font-size: 30px; }
+@media (max-width: 566px) { /* line 58, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+  html.microsite .slide-content .header-wrap h2 { float: none; } }
+/* line 75, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .slide-content .text-wrap .row-wrap { overflow: hidden; }
+/* line 78, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .slide-content .text-wrap .row-wrap p { margin: 0px; padding: 5px 10px; background-color: rgba(255, 255, 255, 0.95); display: inline-block; float: right; font-weight: 500; font-size: 20px; color: #1D1D1D; }
+@media (max-width: 566px) { /* line 78, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+  html.microsite .slide-content .text-wrap .row-wrap p { float: none; line-height: 22px; } }
+/* line 95, ../../Private/sass/partials/microsite/mod/_mod-stage-slider.scss */
+html.microsite .slide-content .text-wrap .row-wrap:nth-child(2) p { padding-top: 0; }
 
 /** brandung _mod-stage-static.scss v1.0.0  Copyright brandung GmbH & Co.KG http://www.brandung.de/  Date: 2014-10-23 MIT License (MIT) */
 /* ========================================================================== mod-stage-static ========================================================================== */
