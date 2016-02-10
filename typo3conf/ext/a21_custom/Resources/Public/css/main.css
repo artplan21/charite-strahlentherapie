@@ -1873,23 +1873,25 @@ html.microsite footer .contact-wrapper .contact-icon-wrap { margin-top: -10px; }
 html.microsite footer .contact-wrapper .contact-icon-wrap a[class*="icon-"]:before { width: 48px; height: 48px; font-size: 46px; border-radius: 24px; line-height: 48px; background: #aee5d8; margin-right: 4px; }
 /* line 25, ../../Private/sass/partials/microsite/_footer.scss */
 html.microsite footer .contact-wrapper .contact-icon-wrap a strong { position: relative; top: -15px; font-size: 24px; }
-@media (max-width: 340px) { /* line 30, ../../Private/sass/partials/microsite/_footer.scss */
-  html.microsite footer .contact-wrapper .contact-icon-wrap a strong span { margin-left: 50px; } }
-/* line 38, ../../Private/sass/partials/microsite/_footer.scss */
+/* line 30, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite footer .contact-wrapper .contact-icon-wrap a strong span { display: inline-block; }
+@media (max-width: 340px) { /* line 33, ../../Private/sass/partials/microsite/_footer.scss */
+  html.microsite footer .contact-wrapper .contact-icon-wrap a strong span:last-child { margin-left: 50px; } }
+/* line 42, ../../Private/sass/partials/microsite/_footer.scss */
 html.microsite footer .contact-wrapper .contact-text-wrap { padding-left: 52px; margin-top: -18px; }
-/* line 44, ../../Private/sass/partials/microsite/_footer.scss */
-html.microsite footer ul.meta-navi, html.microsite footer ul.service-navi { height: auto; width: auto; }
 /* line 48, ../../Private/sass/partials/microsite/_footer.scss */
+html.microsite footer ul.meta-navi, html.microsite footer ul.service-navi { height: auto; width: auto; }
+/* line 52, ../../Private/sass/partials/microsite/_footer.scss */
 html.microsite footer ul.meta-navi li, html.microsite footer ul.service-navi li { float: none !important; }
-@media screen and (min-width: 61.9375em) { /* line 44, ../../Private/sass/partials/microsite/_footer.scss */
+@media screen and (min-width: 61.9375em) { /* line 48, ../../Private/sass/partials/microsite/_footer.scss */
   html.microsite footer ul.meta-navi, html.microsite footer ul.service-navi { height: auto; width: auto; } }
-@media screen and (min-width: 47.9375em) { /* line 44, ../../Private/sass/partials/microsite/_footer.scss */
+@media screen and (min-width: 47.9375em) { /* line 48, ../../Private/sass/partials/microsite/_footer.scss */
   html.microsite footer ul.meta-navi, html.microsite footer ul.service-navi { height: auto; width: auto; } }
-@media screen and (max-width: 62em) { /* line 63, ../../Private/sass/partials/microsite/_footer.scss */
+@media screen and (max-width: 62em) { /* line 67, ../../Private/sass/partials/microsite/_footer.scss */
   html.microsite .contact-wrapper { margin: 0 10px; }
-  /* line 67, ../../Private/sass/partials/microsite/_footer.scss */
-  html.microsite .award-wrapper { margin-left: 10px; }
   /* line 71, ../../Private/sass/partials/microsite/_footer.scss */
+  html.microsite .award-wrapper { margin-left: 10px; }
+  /* line 75, ../../Private/sass/partials/microsite/_footer.scss */
   html.microsite ul.meta-navi, html.microsite ul.service-navi { margin-left: 10px; } }
 
 /** brandung navigation.scss v1.0.0  Copyright brandung GmbH & Co.KG http://www.brandung.de/  Date: 2014-09-23 MIT License (MIT) */
