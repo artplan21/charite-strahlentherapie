@@ -1,0 +1,4 @@
+/* specific page styles for extension "tx_cssstyledcontent" */
+	.csc-textpic-intext-right-nowrap .csc-textpic-text { margin-right: 470px; }
+	.csc-textpic-intext-left-nowrap .csc-textpic-text { margin-left: 470px; }
+	.csc-textpic-intext-left-nowrap-330 .csc-textpic-text { margin-left: 330px; }
