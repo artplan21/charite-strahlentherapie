@@ -1154,20 +1154,36 @@ Brandung.DeferMainPlugins.then(function () {
 						navElement = $('nav[role="navigation"]'),
 						navPosition = navElement.position().top,
 						navHeight = navElement.height(),
-						viewportHeight = win.height();
+						viewportHeight = win.height(),
+                        main = $('main'),
+                        footer = $('footer');
 
 					//calculate position and apply css
 					function calculatePosition (obj) {
-						if (viewportHeight + win.scrollTop() >= navPosition + navHeight) {
 
-							obj.addClass('is-fixed').css({
-								top: '-' + ((navPosition + navHeight) - viewportHeight) + 'px'
-							});
-						} else {
-							obj.removeClass('is-fixed').css({
-								top: 0
-							});
-						}
+                        // check if the navigation is smaller then the content / body (main + footer)
+                        if((navPosition + navHeight) < (main.innerHeight() + footer.innerHeight())){
+
+                            // if the navigation is smaller, clear margins from the footer
+                            footer.css('margin-top','0');
+
+                            // now calculate the position...
+                            if (viewportHeight + win.scrollTop() >= navPosition + navHeight) {
+                                // if we are in desktop mode (we check if the mobile-menu-button is visible or not)
+                                if($('span.nav-toggle').css('display') == 'none'){
+                                    obj.addClass('is-fixed').css({
+                                        top: '-' + ((navPosition + navHeight) - viewportHeight) + 'px'
+                                    });
+                                }
+                            } else {
+                                obj.removeClass('is-fixed').css({
+                                    top: 0
+                                });
+                            }
+                        }else {
+                            // if the navigation is greater then the content / body, add margin to the footer to stretch the content to the same height as the navigation
+                            footer.css('margin-top',((navPosition + navHeight) - (main.innerHeight() + footer.innerHeight()))+'px');
+                        }
 					}
 
 					calculatePosition(obj);
@@ -1176,6 +1192,10 @@ Brandung.DeferMainPlugins.then(function () {
 					win.on('scroll', function () {
 						calculatePosition(obj);
 					});
+
+                    win.resize(function(){
+                        calculatePosition(obj);
+                    });
 				}
 			};
 
